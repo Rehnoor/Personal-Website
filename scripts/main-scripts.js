@@ -15,21 +15,27 @@ if (!isLight) {
     gitLogo.src = "icons/github-mark-white.png";
     const liLogo = document.getElementById("in-logo");
     liLogo.src = "icons/In-White-128@2x.png";
+    const nameLogo = document.getElementById("logo-pic");
+    nameLogo.src = "icons/RSRed.png";
 }
 
 modeToggle.addEventListener('click', () => {
-    if (isLight) {
+    if (isLight) { // if current mode is light, you will be toggling to dark
         isLight = false;
         const gitLogo = document.getElementById("git-logo");
         gitLogo.src = "icons/github-mark-white.png";
         const liLogo = document.getElementById("in-logo");
         liLogo.src = "icons/In-White-128@2x.png";
-    } else {
+        const nameLogo = document.getElementById("logo-pic");
+        nameLogo.src = "icons/RSRed.png";
+    } else { // if your current mode is not light (dark) then you will be toggling to light
         isLight = true;
         const gitLogo = document.getElementById("git-logo");
         gitLogo.src = "icons/github-mark.png"
         const liLogo = document.getElementById("in-logo");
         liLogo.src = "icons/In-Blue-128@2x.png";
+        const nameLogo = document.getElementById("logo-pic");
+        nameLogo.src = "icons/RSBlue.png";
     }
     body.classList.toggle('dark-mode');
     updateModeToggleText();

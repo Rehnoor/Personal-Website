@@ -121,13 +121,13 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--accent-color);
 }
 
 #logo-pic {
-    width: 120px;
+    width: 50px;
 }
 
 nav ul {
@@ -364,7 +364,7 @@ footer {
         font-size: 1rem;
     }
 
-    nav ul {
+    .nav-icon {
         display: none;
     }
     
