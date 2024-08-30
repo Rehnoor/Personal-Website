@@ -2,11 +2,20 @@ import { Gradient } from './Gradient.js'
 // Initialize GSAP and ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-let isLight = true;
+let isLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
 
-// Dark/Light mode toggle
-const modeToggle = document.getElementById('mode-toggle');
 const body = document.body;
+const modeToggle = document.getElementById('mode-toggle');
+
+// Apply the initial mode
+if (!isLight) {
+    body.classList.add('dark-mode');
+    updateModeToggleText();
+    const gitLogo = document.getElementById("git-logo");
+    gitLogo.src = "icons/github-mark-white.png";
+    const liLogo = document.getElementById("in-logo");
+    liLogo.src = "icons/In-White-128@2x.png";
+}
 
 modeToggle.addEventListener('click', () => {
     if (isLight) {
@@ -44,12 +53,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// const form = document.getElementById('contact-form');
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     alert('Thank you for your message! I will get back to you soon.');
-//     form.reset();
-// });
 
 // Animations
 gsap.from(".hero-content", {

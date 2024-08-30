@@ -2,7 +2,7 @@
     --bg-color: #fafaff;
     --text-color: #333;
     --accent-color: #5A9FFF;
-    --secondary-color: #2ecc71;
+    --secondary-color: #E94560;
     --card-bg: #ffffff;
     --nav-bg: rgba(255, 255, 255, 0.9);
     --gcOne: #D0E4FF; 
@@ -15,7 +15,7 @@
     --bg-color: #1a1a1a;
     --text-color: #f4f4f4;
     --accent-color: #E94560;
-    --secondary-color: #2ecc71;
+    --secondary-color: #5A9FFF;
     --card-bg: #2c2c2c;
     --nav-bg: rgba(0, 0, 0, 0.9);
     --gcOne: #1A1A2E; 
@@ -124,6 +124,10 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--accent-color);
+}
+
+#logo-pic {
+    width: 120px;
 }
 
 nav ul {
@@ -246,7 +250,7 @@ h2 {
 
 .project-card {
     background-color: var(--card-bg);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -270,6 +274,7 @@ h2 {
 .project-tech {
     display: flex;
     flex-wrap: wrap;
+    padding: 5px;
 }
 
 .project-tech p {
@@ -362,6 +367,7 @@ footer {
     nav ul {
         display: none;
     }
+    
 
     #mode-toggle {
         position: absolute;
