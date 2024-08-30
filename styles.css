@@ -166,7 +166,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
     color: #ffffff;
 }
 
