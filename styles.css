@@ -173,6 +173,10 @@ nav a:hover {
     color: #ffffff;
 }
 
+#form-submit-button {
+    margin-top: 10px;
+}
+
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
