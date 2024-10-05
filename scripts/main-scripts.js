@@ -68,6 +68,7 @@ gsap.from(".hero-content", {
     ease: "power3.out"
 });
 
+
 // Function to initialize animations with ScrollTrigger
 function initAnimations() {
     // Updated animation for skill cards
@@ -111,6 +112,13 @@ function initAnimations() {
 // Wait for the DOM content to be fully loaded before initializing animations
 document.addEventListener('DOMContentLoaded', () => {
     initAnimations();
+
+    let form = document.getElementById("contact-form");
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("Thank you for submitting!");
+    })
 });
 
 // Create your gradient instance and initialize it
